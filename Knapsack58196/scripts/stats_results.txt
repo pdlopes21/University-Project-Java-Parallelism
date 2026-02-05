@@ -1,0 +1,12 @@
+Descriptive statistics (total_ms):
+                    count       mean    median          std     min     max     mean_s  median_s
+algorithm                                                                                       
+ExecutorService        20   26860.80   26997.5  1729.732459   24331   31063   26.86080   26.9975
+JavaParallelStream     20   28483.15   28424.0  1724.755033   26043   33479   28.48315   28.4240
+sequential             20  121637.45  123148.0  9552.703974  100614  137407  121.63745  123.1480
+
+Pairwise Mann-Whitney U tests (two-sided) with Bonferroni correction:
+pairs, U, raw_p, bonferroni_adj_p
+ExecutorService vs JavaParallelStream, 93.0, 0.003966238640223918, 0.011898715920671753
+ExecutorService vs sequential, 0.0, 6.79561512817336e-08, 2.038684538452008e-07
+JavaParallelStream vs sequential, 0.0, 6.79561512817336e-08, 2.038684538452008e-07
